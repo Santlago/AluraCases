@@ -1,10 +1,10 @@
-import Title from "../src/components/Title";
+import Head from "next/head";
 import GlobalStyle from "../src/theme/GlobalStyle";
 
 function MyApp({ Component, pageProps }) {
     return (
         <>
-            <Title>
+            <Head>
                 {/* <!-- Google tag (gtag.js) --> */}
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0039FXRHXW"></script>
                 <script 
@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com"  />
                 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
-            </Title>
+            </Head>
             <GlobalStyle />
             <Component {...pageProps} />
         </>
